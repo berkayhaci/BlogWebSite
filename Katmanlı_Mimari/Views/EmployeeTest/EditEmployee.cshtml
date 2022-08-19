@@ -1,0 +1,17 @@
+﻿@using Katmanlı_Mimari.Controllers
+@model Class1
+@{
+    ViewData["Title"] = "EditEmployee";
+    Layout = "~/Views/Shared/AdminLayout.cshtml";
+}
+
+<h1>Güncelle</h1>
+<form method="post">
+    <label>ID</label>
+    @Html.TextBoxFor(x=>x.ID, new{@class="form-control"})
+    <label>AdıSoyadı</label>
+    @Html.TextBoxFor(x=>x.Name, new{@class="form-control"})
+    <br />
+    <button class="btn-success">Güncelle</button>
+</form>
+
